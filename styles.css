@@ -1,0 +1,263 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: white;
+    color: cornflowerblue;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar-header {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: whitesmoke;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    padding: 15px 20px;
+}
+
+.sidebar-menu li a {
+    color: cornflowerblue;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar-menu li a:hover {
+    background-color: white;
+    color: blue;
+}
+
+.menu-heading {
+    padding: 10px 20px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #8f9bb3;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.main-header {
+    padding-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width:780px;
+}
+
+.search-button {
+    padding: 8px 16px;
+    background-color: #222b45;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #1a2138;
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+}
+
+.header-contact {
+    margin-right: 20px;
+    font-size: 0.9em;
+    color: #8f9bb3;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-name {
+    font-size: 1em;
+    color: #1a2138;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.banner h1 {
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.banner h1 p {
+    font-size: 1em;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+.banner-item {
+    background-color: #fff;
+    padding: 20px;
+    flex: 1;
+    margin-right: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.banner-item h3 {
+    margin-top: 0;
+}
+
+.banner-item button {
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.banner-item button:hover {
+    background-color: #e50061;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stat-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 32%;
+}
+
+.stat-card h3 {
+    margin-top: 0;
+}
+.stat-card canvas {
+    width: 100%;
+    height: 200px;
+}
+
+.next-section, .next-in, .pending-invoices {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.next-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.next-in, .pending-invoices {
+    background-color: #fff;
+    padding: 20px;
+    width: 49%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.next-in {
+    margin-right: 1%;
+}
+
+.pending-invoices {
+    margin-left: 1%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th, td {
+    padding: 8px;
+}
+
+.not-allocated {
+    color: red;
+}
+
+.invoice-pending {
+    color: orange;
+}
+
+.allocated {
+    color: green;
+}
+
+.view-all {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #222b45;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-all:hover {
+    background-color: #ff4081;
+}
